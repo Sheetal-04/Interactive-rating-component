@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="images/icon-star.svg" alt="icon">
+            <h3>How did we do?</h3>
+            <p> Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!</p>
+            <div class="btnn">
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+            </div>
+            <br>
+            <button type="submit" onclick="submitForm()" class="submit">S U B M I T</button>
+        </div>
+        <div class="thank">
+            <div class="img2">
+                <!-- <img src="images/illustration-thank-you.svg" alt="#"> -->
+            </div>
+            <h4 class="thankh4"> You selected 1 out of 5</h4>
+            <h1 class="thankh1">Thank you!</h1>
+            <p class="thankpara"> We appreciate you taking the time to give a rating. If you ever need more support,
+                don't hesitate to get in touch!</p>
+        </div>
+    </div>
+    <script>
+        const ratingButtons = document.querySelectorAll('.btn');
+        const thankyouH4 = document.querySelector('.thank h4');
+        let selectedValue = 0;
+        ratingButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+                selectedValue = event.target.value;
+                console.log(`Selected rating value: ${selectedValue}`);
+                // Add the "selected" class to the clicked button
+                button.classList.add('selected');
+
+                // Remove the "selected" class from all other buttons
+                ratingButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.classList.remove('selected');
+                    }
+                });
+            });
+        });
+        function submitForm() {
+            const box = document.querySelector('.box');
+            const thankyou = document.querySelector('.thank');
+            box.style.display = "none";
+            thankyou.style.display = "block";
+            thankyouH4.textContent = `You selected ${selectedValue} out of 5`;
+        }
+    </script>
+</body>
+
+</html>

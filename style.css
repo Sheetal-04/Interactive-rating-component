@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:wght@400;700&family=Roboto:wght@400;700&family=Space+Grotesk:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.box {
+  width: 375px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  /* display: none; */
+}
+
+img {
+  margin-top: 25px;
+  margin-left: 25px;
+  border: 2px;
+  padding: 5px;
+  background-color: hsl(220, 5%, 25%);
+  border-radius: 50%;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+p {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.btnn {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.btn {
+  width: 45px;
+  height: 45px;
+  border: hsl(216, 12%, 54%);
+  border-radius: 50%;
+  padding: 10px;
+  margin: 7px;
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.btn.selected {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.submit {
+  display: block;
+  font-weight: bolder;
+  border: hsl(25, 97%, 53%);
+  border-radius: 25px;
+  padding: 15px;
+  width: 85%;
+  margin: 0 auto;
+  background-color: hsl(25, 97%, 53%);
+}

@@ -1,0 +1,34 @@
+.thank {
+  width: 375px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(0, 0%, 100%);
+  display: none;
+}
+.img2 {
+  background-image: url("images/illustration-thank-you.svg");
+  height: 30%;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.thankh4 {
+  color: hsl(25, 97%, 53%);
+  margin-top: 20px !important;
+  text-align: center;
+  background-color: hsl(210, 3%, 23%);
+  border-radius: 15px;
+  width: 50%;
+  margin: auto;
+  padding-left: 2px;
+}
+.thankh1 {
+  text-align: center;
+  margin-top: 12px;
+}
+.thankpara {
+  text-align: center;
+  margin-top: 10px !important;
+  margin: auto;
+}
